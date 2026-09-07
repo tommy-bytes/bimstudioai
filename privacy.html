@@ -34,13 +34,15 @@ sunt fișiere pe dispozitivul tău, pe care doar tu le muți.</p>
 
 <h3>1. Pe scurt</h3>
 <ul>
-  <li>Aplicația <strong>nu are acces la rețea</strong>. Nu trimite nimic nicăieri și nu descarcă
-      nimic. Producătorul nu operează niciun server pentru această aplicație.</li>
+  <li>Producătorul <strong>nu operează niciun server</strong> pentru această aplicație și nu
+      primește nimic din munca ta. Singura conexiune pe care o face aplicația este către App Store,
+      prin StoreKit, ca să afle dacă abonamentul este activ.</li>
   <li><strong>Nu există cont</strong>, autentificare, analytics, urmărire, SDK-uri de terță parte
       sau identificator publicitar.</li>
   <li>Proiectele — pereți, goluri, planșee, camere, metadatele proiectului și ale echipei pe care le
       introduci tu — sunt scrise <strong>doar pe dispozitiv</strong>, în containerul aplicației.</li>
-  <li>Plata se face o singură dată, prin App Store. Producătorul nu primește date de plată.</li>
+  <li>Plata abonamentului este gestionată integral de Apple. Producătorul nu primește numărul
+      cardului, adresa de facturare sau identitatea cumpărătorului.</li>
 </ul>
 
 <h3>2. Cine este operatorul de date</h3>
@@ -88,10 +90,13 @@ nu este trimis către vreun server, nici al producătorului, nici al altcuiva.</
 <p>Când imporți un fișier <code>.bimproj</code>, aplicația îl citește o singură dată și îl copiază în
 containerul ei. Nu păstrează acces la fișierul original și nu citește alte fișiere.</p>
 
-<h3>6. Plata</h3>
-<p>Aplicația se cumpără prin App Store. Apple procesează plata. Producătorul <strong>nu
-primește</strong> date de card, adresă de facturare sau identitatea cumpărătorului, ci doar
-rapoartele agregate de vânzări puse la dispoziție de Apple.</p>
+<h3>6. Abonamentul și plata</h3>
+<p>Abonamentul „BIM Studio AI Pro” se cumpără prin App Store. Apple procesează plata și îi comunică
+aplicației, prin StoreKit, doar dacă abonamentul este activ pentru contul Apple de pe dispozitiv.
+Producătorul <strong>nu primește</strong> date de card, adresă de facturare sau identitatea
+cumpărătorului, ci doar rapoartele agregate de vânzări puse la dispoziție de Apple.</p>
+<p>Verificarea abonamentului este singura comunicare în rețea a aplicației. Nu trimite nimic despre
+proiectele tale și nu conține analytics, urmărire sau SDK-uri de terță parte.</p>
 
 <h3>7. Cât timp se păstrează datele</h3>
 <p>Atât timp cât le păstrezi tu. Ștergerea unui proiect din aplicație îi șterge fișierul și copia

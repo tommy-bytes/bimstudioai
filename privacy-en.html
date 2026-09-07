@@ -34,14 +34,15 @@ on your own device, and only you move them.</p>
 
 <h3>1. In short</h3>
 <ul>
-  <li>The app <strong>has no network access</strong>. It sends nothing anywhere and downloads
-      nothing. The developer operates no server for this app.</li>
+  <li>The developer <strong>operates no server</strong> for this app and receives nothing about
+      your work. The only connection the app makes is to the App Store, through StoreKit, to learn
+      whether the subscription is active.</li>
   <li><strong>No account</strong>, no sign-in, no analytics, no tracking, no third-party SDKs and
       no advertising identifier.</li>
   <li>Projects — the walls, openings, slabs, rooms and the project and team details you type —
       are written <strong>only on the device</strong>, in the app's own container.</li>
-  <li>Payment is a one-time purchase through the App Store. The developer receives no payment
-      details.</li>
+  <li>Subscription payment is handled entirely by Apple. The developer receives no card number,
+      billing address or buyer identity.</li>
 </ul>
 
 <h3>2. Who the controller is</h3>
@@ -89,10 +90,13 @@ sent to any server, the developer's or anyone else's.</p>
 <p>When you import a <code>.bimproj</code> file, the app reads it once and copies it into its
 container. It keeps no access to the original file and reads no other files.</p>
 
-<h3>6. Payment</h3>
-<p>The app is bought through the App Store. Apple processes the payment. The developer <strong>does
-not receive</strong> card details, billing address or the buyer's identity — only the aggregated
-sales reports Apple provides.</p>
+<h3>6. The subscription and payment</h3>
+<p>The "BIM Studio AI Pro" subscription is bought through the App Store. Apple processes the payment
+and tells the app, through StoreKit, only whether the subscription is active for the Apple Account on
+the device. The developer <strong>does not receive</strong> card details, billing address or the
+buyer's identity — only the aggregated sales reports Apple provides.</p>
+<p>That subscription check is the app's only network communication. It sends nothing about your
+projects, and contains no analytics, no tracking and no third-party SDKs.</p>
 
 <h3>7. Retention</h3>
 <p>As long as you keep it. Deleting a project in the app deletes its file and its backup.
