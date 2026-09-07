@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support · BIM Studio AI</title>
+<meta name="description" content="Frequently asked questions and contact for BIM Studio AI.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark">BIM</div>
+      <div>
+        <h1>BIM Studio AI</h1>
+        <p>Parametric building modelling for architects · iPhone, iPad and Mac</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index-en.html">Home</a>
+      <a href="privacy-en.html">Privacy</a>
+      <a href="terms-en.html">Terms (EULA)</a>
+      <a href="support-en.html" class="on">Support</a>
+      <a href="./">Română</a>
+    </nav>
+  </div>
+</header>
+<main><div class="wrap">
+<h2>Support</h2>
+<p class="lead">Write to <a href="mailto:stefan@support-remote.org">stefan@support-remote.org</a>.
+We answer in English or Romanian, usually within the same working day.</p>
+
+<h3>Getting started</h3>
+<ol>
+  <li>Open the app and tap <strong>Open an example</strong>: a two-storey house with layered
+      external walls, a door, four windows, a floor slab and a room.</li>
+  <li>In <strong>Design</strong>, tap a wall to select it. Drag its end handle to reshape it, or
+      type an exact length in the inspector. The wall tool draws new walls; the door and window
+      tools place openings by tapping a wall; the room and slab tools drag out rectangles.</li>
+  <li><strong>3D</strong> shows the same model as solids. <strong>Check</strong> tells you what is
+      wrong and takes you there. <strong>Quantities</strong> is the take-off.
+      <strong>Documents</strong> generates the PDF sheets and exports IFC, the schedules and the
+      project file.</li>
+</ol>
+
+<h3>Frequently asked</h3>
+
+<h4>How do I move a project to another device?</h4>
+<p>In <strong>Documents → Exchange → Project file</strong>, export a <code>.bimproj</code> file and
+send it to the other device (AirDrop, Mail, Files). There, press <strong>Import</strong> on the
+project screen, or open the file directly. This version has no cloud sync: projects move as files,
+so you always know where they are.</p>
+
+<h4>What opens the IFC file?</h4>
+<p>Any IFC 4 capable BIM application or viewer. The file contains real elements
+(IfcWallStandardCase, IfcDoor, IfcWindow, IfcSlab, IfcSpace) with their properties, not a mesh.</p>
+
+<h4>What languages does the assistant understand?</h4>
+<p>On iOS 26 and macOS 26 with Apple Intelligence, the description is read by Apple's on-device
+language model, in any language it accepts. On other systems it is read by a built-in vocabulary
+covering English, Romanian, German, Italian, Spanish and French. The screen tells you which one
+answered. Either way the layout is computed by a deterministic algorithm and nothing leaves the
+device.</p>
+
+<h4>Why does a quantity say "unmeasured" instead of a number?</h4>
+<p>Because the app does not invent numbers. A line with no usable rate, a rate in a currency other
+than the project's, or an element that cannot be measured is reported as such, with the reason,
+rather than shown as zero.</p>
+
+<h4>Keyboard shortcuts</h4>
+<ul>
+  <li><strong>Delete</strong> removes the selection; <strong>Escape</strong> cancels what you are
+      drawing or clears the selection.</li>
+  <li><strong>Arrow keys</strong> nudge the selection by one grid step.</li>
+  <li><strong>⌘Z / ⇧⌘Z</strong> undo and redo; <strong>⌘S</strong> saves now (the app saves by
+      itself after every change anyway).</li>
+</ul>
+
+<h4>Where are the projects kept?</h4>
+<p>In the app's own container on your device, as files. Every save is atomic and keeps a copy of the
+previous version. Uninstalling the app deletes them — export the project file first.</p>
+
+<h4>Does it do structural or services design?</h4>
+<p>No. It models architecture: walls, openings, slabs, rooms, storeys. The missing disciplines are
+absent from the app rather than approximated in it.</p>
+
+<h3>What to send when reporting a problem</h3>
+<ul>
+  <li>What you were trying to do and what happened instead.</li>
+  <li>The device model and system version.</li>
+  <li>The app version, from the project settings.</li>
+  <li>If you can, the project file (<code>.bimproj</code>) or a screenshot.</li>
+</ul>
+</div></main>
+<footer><div class="wrap">
+  © 2026 MSCS di Stefan E. · <a href="mailto:stefan@support-remote.org">stefan@support-remote.org</a>
+</div></footer>
+</body>
+</html>
